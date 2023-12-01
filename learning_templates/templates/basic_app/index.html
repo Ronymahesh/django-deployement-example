@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- below content is for template inheritance -->
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+<h1>Welcome to Index Page !!!</h1>
+<h2>This is Index.html page </h2>
+<h1>{{ text|cut:"world" }}</h1>
+<h2>{{ number|add:"30" }}</h2>
+{% endblock %}
+
+<!-- this is proper html content -->
+<!-- <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to Index Home page</h1>
+  </body>
+</html> -->
